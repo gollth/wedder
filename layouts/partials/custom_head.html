@@ -1,0 +1,73 @@
+<style>
+:root {
+    /* see variables.scss for more variables*/
+    --highlight: #afc8f7;
+    --highlight-contrast: #415473;
+
+    /* inverse colors used for :hover */
+    --highlight-inverse: var(--highlight-contrast);
+    --highlight-inverse-contrast: white;
+
+    --cover-text-color: var(--highlight-contrast);
+
+    /* === Cover / Landing area === */
+    /* Used for Landing screen menu buttons, but potentially usable for highlighting other things */
+
+    /* visual guard around title and description, when the feature is enabled */
+    --cover-title-and-description-guard-bg-color: rgba(255, 255, 255, 0.6);
+    --cover-title-text-shadow: white 0px 0px 7px;
+
+
+    /* === sticky top/left navigation menus === */
+    --sticky-menu-text-color: var(--cover-text-color);
+
+
+    /* === Alternating content (post) sections  === */
+    /* Light section - text color */
+    --section-light-text-color: #3a4145;
+    /* Light section - background color */
+    --section-light-bg-color: #f2efe8;
+
+    /* Dark section - text color */
+    --section-dark-text-color: var(--section-light-bg-color);
+    /* Dark section - background color */
+    --section-dark-bg-color: var(--highlight-contrast);
+
+    /* Light&Dark section >quote. Suppressive color, compared to 'Light section - text color'*/
+    --section-uni-quote: #fba0a0;
+     t
+    /* === Single pages=== */
+    --single-page-text-color: var(--section-light-text-color);
+    --single-page-bg-color: var(--section-light-bg-color);
+
+    /* === Footer === */
+    --footer-color-background: #22343a;
+    --footer-color: #bbc7cc;
+
+    /* === Lists === */
+    /* define list element for unnumbered lists, leave empty for default list element */
+    --ul-li-icon: fa-asterisk;
+}
+
+.blog-title {
+  font-family: angella-white;
+  font-weight: normal;
+  color: black;
+}
+.blog-description {
+  font-family: oswald,sans-serif !important;
+  font-weight: 250 !important;
+  text-transform: uppercase;
+  font-weight: lighter;
+}
+
+#header-arrow {
+    color: var(--highlight);
+}
+
+@font-face {
+    font-family: angella-white;
+    src: url("angella-white.otf") format("opentype");
+}
+
+</style>

@@ -4,3 +4,7 @@ weight: 1
 ---
 
 Bla bla bla...
+
+* Hallo
+* ihr
+* zusammen

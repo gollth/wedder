@@ -7,12 +7,12 @@ header_use_video: false
 header_logo: "images/logo.png"
 #
 # Headers are safeHTML, you can use HTML tags such as b,i,u,br
-header_headline: "Wir heiraten"
-header_subheadline: "auf einer Hütte in Österreich"
+header_headline: "Christina und Thore"
+header_subheadline: "Wir heiraten"
 
 # Add a 'Go back to top' item to the navigation menu
 # Title: name of navigation menu entry
 # Weight (i. e. position in menu): none = no menu entry, first = add as first entry, last = ad as last entry
-nav_to_top_title: "Hoch"
-nav_to_top_weight: last
+# nav_to_top_title: "Hoch"
+# nav_to_top_weight: last
 ---
