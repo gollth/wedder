@@ -4,7 +4,7 @@ weight: 5
 header_menu: true
 ---
 
-Bitte gebt uns kurz Rueckmeldung, ob und wann ihr kommt
+Bitte gebt uns kurz Rückmeldung, ob du kommst!
 
 {{< rawhtml >}}
 
