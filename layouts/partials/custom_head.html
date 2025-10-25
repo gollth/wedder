@@ -1,3 +1,6 @@
+<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+<link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
+
 <style>
 :root {
     /* see variables.scss for more variables*/
@@ -46,12 +49,13 @@
 
     /* === Lists === */
     /* define list element for unnumbered lists, leave empty for default list element */
-    --ul-li-icon: fa-asterisk;
+    --ul-li-icon: ;
 }
 
 .blog-title {
   font-family: angella-white;
   font-weight: normal;
+  font-size: 8rem !important;
   color: black;
 }
 .blog-description {
@@ -70,4 +74,21 @@
     src: url("angella-white.otf") format("opentype");
 }
 
+
+
+.splide__slide img {
+  width: 100%;
+  object-fit: cover;
+}
 </style>
+
+<script>
+  document.addEventListener( 'DOMContentLoaded', function () {
+    new Splide('#image-carousel', { 
+      type: 'loop',
+      heightRatio: 0.75, //1024. / 768,
+      pagination: true,
+      autoplay: 'play',
+    }).mount();
+  });
+</script>

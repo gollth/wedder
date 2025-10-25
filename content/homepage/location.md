@@ -8,6 +8,25 @@ Hier erklaeren, wie die Huette so aussieht...
 
 {{< rawhtml >}}
 
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2700.357036417493!2d12.033690787971075!3d47.404976696841395!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4777cd81d5f4c885%3A0xf283b690697029!2sGruppenhaus%20Feldalm%20in%20der%20Wildsch%C3%B6nau!5e0!3m2!1sde!2sde!4v1761406919771!5m2!1sde!2sde" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+<section id="image-carousel" class="splide" aria-label="Die Huette">
+  <div class="splide__track">
+  <ul class="splide__list">
+    <li class="splide__slide"> <img src="images/frontal.jpg"> </li>
+    <li class="splide__slide"> <img src="images/terrasse2.jpg"> </li>
+    <li class="splide__slide"> <img src="images/ausblick.jpg"> </li>
+    <li class="splide__slide"> <img src="images/aussenansicht.jpg"> </li>
+    <li class="splide__slide"> <img src="images/balkon.jpg"> </li>
+    <li class="splide__slide"> <img src="images/terrasse.jpg"> </li>
+    <li class="splide__slide"> <img src="images/grill.jpg"> </li>
+    <li class="splide__slide"> <img src="images/sauna.jpg"> </li>
+    <li class="splide__slide"> <img src="images/innenbereich.jpg"> </li>
+    <li class="splide__slide"> <img src="images/tresen.jpg"> </li>
+   <li class="splide__slide"> <img src="images/doppelbett.jpg"> </li>
+  </ul>
+  <div class="splide__progress">
+   <div class="splide__progress__bar"/>
+   </div>
+  </div>
+</section>
 
 {{</ rawhtml >}}
