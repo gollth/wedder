@@ -1,10 +1,10 @@
 ---
 title: "RSVP"
-weight: 5
+weight: 6
 header_menu: true
 ---
 
-Bitte gebt uns kurz Rückmeldung, ob du kommst!
+Gib uns bitte bis Januar 2026 Bescheid, ob du kommst!
 
 {{< rawhtml >}}
 

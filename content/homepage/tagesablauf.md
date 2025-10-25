@@ -2,7 +2,7 @@
 title: "Tagesablauf"
 header_menu_title: "Tagesablauf"
 navigation_menu_title: "Tagesablauf"
-weight: 3
+weight: 4
 header_menu: true
 ---
 
