@@ -4,7 +4,7 @@ weight: 2
 header_menu: true
 ---
 
-Wir übernachten alle in der Felalm, einer Selbstversorgerhütte in der Wildschönau, Österreich.
+Wir übernachten alle in der Feldalm, einer Selbstversorgerhütte in der Wildschönau, Österreich.
 Bitte bringt Bettwäsche und Handtücher mit.
 
 {{< rawhtml >}}
