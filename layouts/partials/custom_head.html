@@ -36,9 +36,11 @@
     /* Dark section - background color */
     --section-dark-bg-color: var(--highlight-contrast);
 
+    --love-color: #ec4993;
+
     /* Light&Dark section >quote. Suppressive color, compared to 'Light section - text color'*/
-    --section-uni-quote: #fba0a0;
-     t
+    --section-uni-quote: var(--love-color);
+
     /* === Single pages=== */
     --single-page-text-color: var(--section-light-text-color);
     --single-page-bg-color: var(--section-light-bg-color);
@@ -88,6 +90,76 @@ p {
 @font-face {
     font-family: angella-white;
     src: url("angella-white.otf") format("opentype");
+}
+
+.timeline {
+  display: grid;
+  gap: 0rem;
+  align-items: center;
+  position: relative;
+  grid-template-columns: 30% 10% 60%;
+  margin-top: 3rem;
+}
+
+/* 🟦 The continuous vertical spine */
+.timeline::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 35%;
+  transform: translateX(-35%);
+  width: 2px;
+  background: var(--love-color);
+  z-index: 0; /* behind everything */
+}
+.timeline-item {
+  position: relative;
+}
+
+.day {
+  font-family: angella-white !important;
+  font-size: 4rem !important;
+  padding: 0 !important;
+}
+.time {
+  font-size: 2rem !important;
+  padding: 0 !important;
+  white-space: nowrap;
+  margin-right: 3ch;
+}
+.circa {
+  margin-left: -1ch;
+}
+.minutes {
+  font-size: 1rem !important;
+}
+
+
+.left {
+  text-align: right;
+  justify-self: right;
+}
+.timeline-item .tick {
+  grid-column: 2;
+}
+.right {
+  text-align: left;
+  justify-self: left;
+}
+.timeline .content {
+  display: flex;
+  padding: 1rem 1.5rem;
+  background: clear;
+  position: relative;
+  z-index: 1;
+  align-items: center;
+  justify-items: center;
+}
+.timeline .pic {
+  margin-right: 16px;
+  margin-left: 8px;
+  max-width: 10vw;
 }
 
 blockquote {
