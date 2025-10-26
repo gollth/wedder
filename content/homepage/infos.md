@@ -15,10 +15,25 @@ Natürlich, aber gib uns bitte kurz Bescheid.
 
 > Was muss ich alles mitnehmen?
 
-* Bettwäsche
-* Handtücher
-* ggf. Wanderkleidung / Wanderschuhe
+{{< rawhtml >}}
+<ul class="fa-ul">
+  <li>
+    <span class="fa-li"><i class="fa fa-asterisk"></i></span>
+    Bettwäsche
+  </li>
+  <li>
+    <span class="fa-li"><i class="fa fa-asterisk"></i></span>
+    Handtücher
+  </li>
+  <li>
+    <span class="fa-li"><i class="fa fa-asterisk"></i></span>
+    ggf. Wanderkleidung / Wanderschuhe
+  </li>
+</ul>
 
+{{</ rawhtml >}}
+
+>
 > Was für Wandermöglichkeiten gibt es?
 
 Einige, folgen hier noch…
