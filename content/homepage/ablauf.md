@@ -1,7 +1,7 @@
 ---
-title: "Tagesablauf"
-header_menu_title: "Tagesablauf"
-navigation_menu_title: "Tagesablauf"
+title: "Ablauf"
+header_menu_title: "Ablauf"
+navigation_menu_title: "Ablauf"
 weight: 4
 header_menu: true
 ---

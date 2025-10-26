@@ -1,6 +1,6 @@
 ---
-title: "Infos"
-weight: 5
+title: "FAQs"
+weight: 6
 header_menu: true
 ---
 
@@ -32,11 +32,6 @@ Natürlich, aber gib uns bitte kurz Bescheid.
 </ul>
 
 {{</ rawhtml >}}
-
->
-> Was für Wandermöglichkeiten gibt es?
-
-Einige, folgen hier noch…
 
 > Werden wir bedient?
 
