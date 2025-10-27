@@ -10,4 +10,6 @@ header_menu: false
 Wir freuen uns auf Euch!
 </p>
 
+<img class="polaroid" src="./images/wir.jpg"/><img>
+
 {{</ rawhtml >}}
