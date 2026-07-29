@@ -2,6 +2,7 @@
 title: "Gallerie"
 weight: 2
 header_menu: true
+gallery_album: "https://photos.app.goo.gl/cEoyj76VBVvoJ1Gx8"
 gallery:
   - "https://lh3.googleusercontent.com/pw/AP1GczNrmTWS11DMhk30EQzqPlBY6BMeNl0tJHz5p-7EErjM7aeIyAnZIc93bNyfkhPgmX-FFbhBNE970CRx9kPZWV54o2kkUq0PwE4DLi8x9cwyeJgR4-9P=w1920-h1080"
   - "https://lh3.googleusercontent.com/pw/AP1GczPrngQdjJtlqeYj7gdr9g1uW-9woXYZQXhUofCOMrH5LBkpjI6hkuXuZ4UJ4nnAx3mn7AQyiN41DiXVua678yE0sLD4JzvYzyod2j4OnU_7TE_o5Vrc=w1920-h1080"
