@@ -1,0 +1,24 @@
+{{- $images := .Page.Params.gallery -}}
+{{- if not $images -}}
+  {{- errorf "gallery-carousel: no gallery images found on page %s" .Page.Path -}}
+{{- end -}}
+
+<section id="gallery-carousel" class="splide" aria-label="Gallerie">
+  <div class="splide__track">
+    <ul class="splide__list">
+      {{- range $images }}
+      <li class="splide__slide"><img src="{{ . }}" alt="" loading="lazy"></li>
+      {{- end }}
+    </ul>
+  </div>
+</section>
+
+<section id="thumbnail-carousel" class="splide" aria-label="Vorschaubilder">
+  <div class="splide__track">
+    <ul class="splide__list">
+      {{- range $images }}
+      <li class="splide__slide"><img src="{{ . }}" alt="" loading="lazy"></li>
+      {{- end }}
+    </ul>
+  </div>
+</section>

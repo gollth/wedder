@@ -173,38 +173,43 @@ blockquote {
 }
 
 
-.splide__slide {
-    height: 500px;      /* or use clamp() for responsiveness */
+#image-carousel .splide__slide,
+#gallery-carousel .splide__slide {
+    height: clamp(280px, 55vh, 560px);
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.splide__slide img {
+#image-carousel .splide__slide img,
+#gallery-carousel .splide__slide img {
     width: 100%;
     height: 100%;
     object-fit: contain;
 }
 
-.thumbnails {
-  display: flex;
-  margin: 1rem auto 0;
-  padding: 0;
-  justify-content: center;
+#thumbnail-carousel {
+    margin-top: 1rem;
 }
 
-.thumbnail {
-  width: 70px;
-  height: 70px;
-  overflow: hidden;
-  list-style: none;
-  margin: 0 0.2rem;
-  cursor: pointer;
+#thumbnail-carousel .splide__slide {
+    opacity: 0.55;
+    overflow: hidden;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: opacity 0.2s ease, border-color 0.2s ease;
 }
 
-.thumbnail img {
-  width: 100%;
-  height: auto;
+#thumbnail-carousel .splide__slide.is-active {
+    opacity: 1;
+    border-color: var(--highlight-contrast);
+}
+
+#thumbnail-carousel .splide__slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
 }
 
 .polaroid {
@@ -219,28 +224,44 @@ blockquote {
 
 <script>
   document.addEventListener( 'DOMContentLoaded', function () {
-    new Splide('#image-carousel', { 
-      type: 'loop',
-      heightRatio: 0.75, //1024. / 768,
-      pagination: true,
-      autoplay: 'play',
-    }).mount();
-  });
-  document.addEventListener( 'DOMContentLoaded', function () {
-    new Splide('#gallery-carousel', { 
-      type: 'loop',
-      resetProgress: false,
-      pagination: false,
-      autoplay: 'play',
-    }).mount();
-  });
+    if (document.querySelector('#image-carousel')) {
+      new Splide('#image-carousel', {
+        type: 'loop',
+        heightRatio: 0.75,
+        pagination: true,
+        autoplay: 'play',
+      }).mount();
+    }
 
-  document.addEventListener( 'DOMContentLoaded', function () {
-    new Splide('#thumbnail-carousel', { 
-    		fixedWidth : 100,
-    fixedHeight: 60,
-		gap        : 10,
-		rewind     : true,
-		pagination : false,}).mount();
+    var main = document.querySelector('#gallery-carousel');
+    var thumbs = document.querySelector('#thumbnail-carousel');
+    if (!main || !thumbs) return;
+
+    var gallery = new Splide('#gallery-carousel', {
+      type: 'fade',
+      rewind: true,
+      pagination: false,
+      arrows: true,
+    });
+
+    var thumbnails = new Splide('#thumbnail-carousel', {
+      fixedWidth: 100,
+      fixedHeight: 60,
+      gap: 10,
+      rewind: true,
+      pagination: false,
+      isNavigation: true,
+      focus: 'center',
+      breakpoints: {
+        600: {
+          fixedWidth: 60,
+          fixedHeight: 44,
+        },
+      },
+    });
+
+    gallery.sync(thumbnails);
+    gallery.mount();
+    thumbnails.mount();
   });
 </script>
