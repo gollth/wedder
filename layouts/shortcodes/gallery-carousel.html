@@ -1,0 +1,44 @@
+{{- $images := .Page.Params.gallery -}}
+{{- $album := .Page.Params.gallery_album -}}
+{{- if not $images -}}
+  {{- errorf "gallery-carousel: no gallery images found on page %s" .Page.Path -}}
+{{- end -}}
+
+<p>
+<div class="gallery">
+  <section id="gallery-carousel" class="splide" aria-label="Gallerie">
+    <div class="splide__track">
+      <ul class="splide__list">
+        {{- range $images }}
+        <li class="splide__slide"><img src="{{ . }}" alt="" loading="lazy"></li>
+        {{- end }}
+      </ul>
+    </div>
+  </section>
+
+  <section id="thumbnail-carousel" class="splide" aria-label="Vorschaubilder">
+    <div class="splide__track">
+      <ul class="splide__list">
+        {{- range $images }}
+        <li class="splide__slide"><img src="{{ . }}" alt="" loading="lazy"></li>
+        {{- end }}
+      </ul>
+    </div>
+  </section>
+
+  {{- with $album }}
+  <aside class="gallery-download">
+    <a
+      class="gallery-download__btn"
+      href="{{ . }}"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <i class="fa fa-download" aria-hidden="true"></i>
+      <span>Zum Album &amp; Download</span>
+      <i class="fa fa-external-link" aria-hidden="true"></i>
+    </a>
+  </aside>
+  {{- end }}
+</div>
+</p>
